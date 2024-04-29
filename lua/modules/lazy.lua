@@ -24,5 +24,14 @@ require("lazy").setup({
     "nvim-telescope/telescope.nvim",
     tag = "0.1.5",
     dependencies = { "nvim-lua/plenary.nvim" }
-  }
+  },
+  {
+    "morhetz/gruvbox",
+    config = function()
+      vim.cmd.colorscheme("gruvbox")
+    end
+  },
+  {
+    "nvim-treesitter/nvim-treesitter"
+  },
 })
